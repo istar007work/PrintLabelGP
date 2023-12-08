@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Garamond', sans-serif;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+ 
+body.loaded {
+    opacity: 1;
+}
+
+
+
+
+nav {
+    /*background-color: #06223d;*/
+    background-image: url("navbar_image.png");
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 2px solid #000000;
+    background-size: cover;
+    height: 5px;
+
+}
+
+
+
+
+
+.homepagevideo {
+    width: 100%; /* Adjust the width to cover the entire nav bar */
+    height: 500px; /* Maintain the aspect ratio */
+    width: autopx;
+    object-fit: cover; /* Crop the video */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the video behind other content */
+    filter:blur(1px)
+    
+  }
+
+  
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    bottom: 10px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-image: url("nav2.jpg");
+    background-size: cover;
+    padding: 10px;
+    border-radius: 0 0 2px 10px;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+
+nav ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 10px 0;
+}
+
+nav ul li ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+    
+}
+
+header h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: #000000;
+    
+}
+
+header h4{
+    font-size: medium;
+    font-family: 'Garamond', sans-serif;
+
+}
