@@ -15,12 +15,14 @@ body.loaded {
 
 nav {
     /*background-color: #06223d;*/
-    background-image: url("navbar_image.png");
+    /*background-image: url("navbar_image.png");*/
+    background-color: #28547c;
     text-align: center;
     padding: 30px 0;
-    border-bottom: 2px solid #000000;
+    border-bottom: 5px solid #000000;
     background-size: cover;
-    height: 5px;
+    height: 1px;
+    
 
 }
 
@@ -87,7 +89,7 @@ nav ul li a::before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ffcc00;
+    background-color: #ffffff;
     transform-origin: bottom right;
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -111,18 +113,131 @@ nav ul li:hover > a::before {
 /*******************************************************************/
 /*******************************************************************/
 /*******************************************************************/
-.sec_one {
 
-    background-color: #27ae60;
-    margin-top: 500px;
+
+/* Add a container to hold both sections */
+/* Add a container to hold both sections */
+.container {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.sec_one,
+.sec_two {
+  flex: 1; /* Adjust the flex property to control the width of each section */
+  margin: 10px; /* Add margin between the sections */
+  width: auto;
+  height: 50px;
+}
+
+/*******************************************************************/
+
+
+.sec_one {
+    position: relative;
+    overflow: hidden;
+    color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
+    top: 200px;
+    height: 800px;
+    left: 0px;
+    margin-left: 0%;
+    margin-right: auto;
+    background-color: #000000;
+    
+  }
+  
+  
+
+.back1 {
+  width: 100%; /* Adjust the width to cover the entire nav bar */
+  height: 2000px; /* Maintain the aspect ratio */
+  object-fit: cover; /* Crop the video */
+  position: absolute;
+  left: 0;
+  z-index: -1; /* Place the video behind other content */
+}
+
+
+  .section1content {
+    position: relative;
+    z-index: 1; /* Place the content above the video */
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+    top: 390px;
+    
+    
+  }
+
+
+
+  .section1content .driverid{
+    font-size: 50px; /* Adjust the size as needed */
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* Adjust the color as needed */
+}
+
+
+.driver_image{
+    position: absolute;
+    top: 35%; /* Adjust the top position as needed */
+    left: 50%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px; 
+    z-index: 1; /* Place the image on top of the video */
+
+  }
+
+
+/*******************************************************************/
+.sec_two {
+  position: relative;
+  overflow: hidden;
+  color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
+  top: 200px;
+  height: 800px;
+  background-color: #dfdfdf;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 
 
 
+.section2content {
+  position: relative;
+  z-index: 1; /* Place the content above the video */
+  text-align: center;
+  padding: 50px;
+  color: #000000;
+  top: 400px;
+  
+  
+}
 
 
 
+.section2content .toolid{
+  font-size: 50px; /* Adjust the size as needed */
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* Adjust the color as needed */
+}
+
+
+
+.tool_image{
+  position: absolute;
+  top: 35%; /* Adjust the top position as needed */
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: 500px; 
+  z-index: 1; /* Place the image on top of the video */
+
+}
 /*******************************************************************/
 /*******************************************************************/
 /*******************************************************************/
