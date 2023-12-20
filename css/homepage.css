@@ -41,8 +41,8 @@ nav {
 
 .welcome {
   text-align: center;
-  margin-top: 70px; /* Add margin as needed */
-  color: #fff; /* Text color */
+  margin-top: 100px; /* Add margin as needed */
+  color: #ffffff17; /* Text color */
 }
 
 
@@ -58,6 +58,7 @@ nav {
     left: 0;
     z-index: -1; /* Place the video behind other content */
     filter:blur(1px)
+    
     
   }
 
@@ -105,7 +106,7 @@ nav ul li a::before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: #000000;
     transform-origin: bottom right;
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -163,7 +164,7 @@ nav ul li:hover > a::before {
     left: 0px;
     margin-left: 0%;
     margin-right: auto;
-    background: linear-gradient(to right, #8ac9f3, #002c55);
+    background: linear-gradient(to bottom, #28547c, #001238,  #030303);
     border-bottom: 5px solid #28547c; /* Specify the border color and thickness */
     border-radius: 1%;
     
@@ -182,7 +183,8 @@ nav ul li:hover > a::before {
   position: absolute;
   left: 0;
   z-index: -1; /* Place the video behind other content */
-}
+} 
+
 
 
   .section1content {
@@ -190,7 +192,7 @@ nav ul li:hover > a::before {
     z-index: 1; /* Place the content above the video */
     text-align: center;
     padding: 50px;
-    color: #000000;
+    color: #ffffff;
     top: 390px;
     font-family: Arial, Helvetica, sans-serif;;
     
@@ -201,7 +203,7 @@ nav ul li:hover > a::before {
   .section1content .driverid{
     font-size: 50px; /* Adjust the size as needed */
     font-weight: bold;
-    color: rgb(0, 0, 0); /* Adjust the color as needed */
+    color: rgb(255, 255, 255); /* Adjust the color as needed */
 }
 
 
@@ -214,6 +216,7 @@ nav ul li:hover > a::before {
     max-height: 100%;
     width: 500px; 
     z-index: 1; /* Place the image on top of the video */
+   
 
   }
 
@@ -341,13 +344,13 @@ nav ul li:hover > a::before {
   position: relative;
   overflow: hidden;
   color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
-  background-color: #000000;
+  background: linear-gradient(to bottom, #000000, #001238,  #28547c);
   top: 200px;
   height: 800px;
   margin-right: 0;
   margin-left: auto;
   font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 5px solid #555555; /* Specify the border color and thickness */
+  border-bottom: 5px solid #000000; /* Specify the border color and thickness */
   border-radius: 1%;
   
 }
@@ -376,22 +379,25 @@ nav ul li:hover > a::before {
 
 
 .section3content {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1; /* Place the content above the video */
-  text-align: center;
+  text-align: left;
   padding: 50px;
   color: #ffffff;
-  top: -300px !important;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-  
-  
+  font-size: small;
+  max-width: 400px; /* Set a maximum width for the text */
 }
+
 
 .section3content .xdevice{
   font-size: 50px; /* Adjust the size as needed */
   font-weight: bold;
   color: rgb(255, 255, 255); /* Adjust the color as needed */
+  max-width: 500px
 }
 
 
@@ -399,11 +405,107 @@ nav ul li:hover > a::before {
 
 /*******************************************************************/
 /*******************************************************************/
+/*******************************************************************/
+.sec_three_two {
+  position: relative;
+  overflow: hidden;
+  color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
+  background: linear-gradient(to bottom, #28547c, #001238,  #000000);
+  top: 230px;
+  height: 400px;
+  margin-right: 0;
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 5px solid #000000; /* Specify the border color and thickness */
+  border-radius: 1%;
+  
+}
+
+
+
+.ximagetwo {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed for different alignment */
+  align-items: center; /* Align items vertically in the center */
+  margin-top: -80px;
+}
+
+.ximagetwo {
+  max-width: 50%; /* Ensure the images don't exceed their natural width */
+}
+
+.xthreepoint {
+  left: auto;
+}
 
 
 
 
+.section3twocontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Place the content above the video */
+  text-align: left;
+  padding: 50px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  max-width: 400px; /* Set a maximum width for the text */
+}
 
+
+.section3twocontent .xdevicetwo{
+  font-size: 50px; /* Adjust the size as needed */
+  font-weight: bold;
+  color: rgb(255, 255, 255); /* Adjust the color as needed */
+  max-width: 500px
+}
+
+/* animate the feature after scrolling*/
+.section3twocontent .eightyeightfeat{
+  right: auto;
+}
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
+.sec_three_three{
+  position: relative;
+  overflow: hidden;
+  color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
+  background: linear-gradient(to bottom, #000000, #001238,  #28547c);
+  top: 250px;
+  height: 400px;
+  margin-right: 0;
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 5px solid #000000; /* Specify the border color and thickness */
+  border-radius: 1%;
+
+}
+
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
+.sec_three_four{
+  position: relative;
+  overflow: hidden;
+  color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
+  background: linear-gradient(to top, #000000, #001238,  #28547c);
+  top: 270px;
+  height: 400px;
+  margin-right: 0;
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 5px solid #000000; /* Specify the border color and thickness */
+  border-radius: 1%;
+
+}
 
 
 
@@ -416,8 +518,8 @@ nav ul li:hover > a::before {
   position: relative;
   overflow: hidden;
   color: #000000; /* Set text color to white or a color that contrasts with the video */
-  background: linear-gradient(to right, #b9b9b9, #eeeeee);
-  top: 220px;
+  background: linear-gradient(to bottom, #ffffff, #ffffff,  #ececec);
+  top: 280px;
   height: 600px;
   width: 950px;
   margin-right: auto;
@@ -453,8 +555,8 @@ nav ul li:hover > a::before {
   font-size: 50px;
   margin-bottom: 8px;
   position: absolute;
-  top: -40%;
-  right: 290%;
+  top: -50%;
+  right: 320%;
 }
 
 
@@ -467,15 +569,15 @@ nav ul li:hover > a::before {
   position: relative;
   overflow: hidden;
   color: #000000; /* Set text color to white or a color that contrasts with the video */
-  background: linear-gradient(to right, #000000, #2c2c2c);
-  top: -385px;
+  background: linear-gradient(to right, #000000, #28547c);
+  top: -325px;
   height: 600px;
   width: 950px;
   margin-left: auto;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 5px solid #28547c; /* Specify the border color and thickness */
   border-radius: 1%;
-  
+ 
 }
 
 
@@ -543,8 +645,74 @@ nav ul li:hover > a::before {
 /*******************************************************************/
 /*******************************************************************/
 /*******************************************************************/
-/* button design*******************************************************************/
 
+.sec_six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #000000;
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -300px;
+  background: linear-gradient(to right, #28547c, #020202); /* Specify the border color and thickness */
+  border-radius: 1%;
+}
+
+
+
+.wclass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 50%; /* Adjust as needed */
+}
+
+.wimage{
+  max-width: 100%;
+  height: auto;
+}
+
+.section6content {
+  flex-basis: 50%; /* Adjust as needed */
+  padding: 20px;
+  text-align: left;
+  max-width: 400px;
+  color: #fff;
+}
+
+.wdevice {
+  color: #ffffff; /* Adjust as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
+/* button design*******************************************************************/
 .homebutton{
   font-size: large;
   width: 150px;
@@ -554,12 +722,10 @@ nav ul li:hover > a::before {
   background: rgba(219, 219, 219, 0.5);
   border: none; /* Remove border for a cleaner look */
   transition: background-color 0.8s ease; /* Add a smooth transition effect */
-  
-
 }
 
 .homebutton:hover {
-  background: linear-gradient(to bottom, #1a1a1a, #28547c);
+  background-color: #28547c;
   color: #fff;
 }
 
