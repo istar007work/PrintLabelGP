@@ -7,12 +7,13 @@ const port = process.env.PORT || 3000;
 
 
 
-
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'assets','images')));
 app.use(express.static(path.join(__dirname, 'assets','videos')));
 app.use(express.static(path.join(__dirname, 'css')));
 app.use(express.static(path.join(__dirname, 'index')));
+app.use(express.static(path.join(__dirname, 'javascript','homepage')));
+
 
 
 

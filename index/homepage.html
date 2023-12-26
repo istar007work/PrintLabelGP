@@ -50,12 +50,14 @@
     <div class="welcome">
       <h1>.</h1>
       <h4></h4>
-
     </div>
-
-    
-    
+   
   </header>
+  
+  
+  <div class="top_announce">
+    <p class="top_announce_text">We are thrilled to announce the release of our all-new BLE Driver ID and Tool Tags, a cutting-edge solution for driver tracking and asset management.To explore all the incredible features and enhancements, click here for more information.Thank you for choosing Geo for your tracking needs. We're dedicated to providing innovative solutions to empower your business.</p>
+  </div>
   
 
 
@@ -129,10 +131,12 @@
     </div>
   </section>
 
+
+
   <section class="sec_three_three">
-    <h4>95</h4>
-    
+    <h4>95</h4>  
   </section>
+
 
   <section class="sec_three_four">
     <h4>96</h4>
@@ -191,8 +195,104 @@
     </div>
   </section>
 
+  <section class="sec_seven">
+    <div class="seventydiv">
+      <img class="seventy_image" src="7X (1).png" >
+    </div>
+    <div class="section7content">
+      <h1 class="seventyname">whereqube 79 Series</h1>
+      <h2>LTE CAT-M1 & CAT.NB1</h2>
+      <p>The whereQube H2O is a ground breaking evolution in telematics applications.
+        It delivers the capability to monitor and act upon engine diagnostics
+        information in real time in addition to a robust set of vehicle tracking
+        features.</p>
+      <button class="homebutton" name="87button" onclick="window.open('your_url_here', '_blank')">Explore</button>
+
+
+    </div>
+  </section>
+
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="8-1226-ADP (1).png" style="width:100%">
+      <div class="harness_text">Listed below you will also find an 8-900 cable. The 8-900 cable is a modified version of the 8-600 cable that looks exactly the same as the 8-600. There will be a label on the cable of '17-18 Paccar' to help differentiate. It's used engines that do not provide a true odometer on the primary pins and have repurposed the J1708 pins as backup pins for J1939 and provide the true odometer on those. E.g 17-18 Paccar engines.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="8-1226 (2).png" style="width:100%">
+      <div class="harness_text">RP 1226 is recommended practice to be used for ELD/Telematics in newer models 2019+ and above, you will still be able to get data from the J1939 Diagnostic connector. 
+        To confirm the RP 1226 port on the vehicle, request that the customer search for RP 1226 or Third-Party Communication in the manual. Alternatively, you may advise them to contact the manufacturer and inquire about the location of the RP1226 port as well as reference the Body Builder Manuals.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="8-800 (2).png" style="width:100%">
+      <div class="harness_text">Warning: This list does not show the vehicles that are supported by Geometris. It is only a database of the Harness Type. If the Vehicle you are looking for is not listed send your request to support@geometris.com with VIN number of the vehicle.</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+  
   
 
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+  <section class="footer_">
+    <!-- Footer inside the section -->
+    <img class="footerlogo" src="logo.png">
+    <div class="footer" id="myFooter">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <a href="#">Geometris ©2024</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">Privacy & Legal</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">News</a>
+          <p></p>
+        </div>
+        <div class="footer-column">
+          <a href="#">Updates</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">Releases</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">About us</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -213,9 +313,81 @@
     });
   </script>
 
-  <!--drag down nac image hovered-->
-  
+  <!--smooth scroll effect-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+            // Add the "loaded" class to the body once the page has fully loaded
+            document.body.classList.add("loaded");
+        });
 
+  </script>
+
+
+
+
+
+  <!--drag down nac image hovered-->
+
+
+  <!--slideshow script-->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+
+  <!--all section content fade in effect on scroll-->
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      var section3Content = document.querySelector(".section3content");
+
+      function fadeInOnScroll() {
+          var scrollPosition = window.scrollY;
+          var elementPosition = section3Content.offsetTop;
+
+          if (scrollPosition >= elementPosition - window.innerHeight / 2 && scrollPosition <= elementPosition + section3Content.offsetHeight) {
+            section3Content.classList.remove("sec3_fade-in");
+          } else {
+            section3Content.classList.add("sec3_fade-in");
+              
+          }
+      }
+
+      // Call the function on initial load
+      fadeInOnScroll();
+
+      // Listen for scroll events
+      window.addEventListener("scroll", fadeInOnScroll);
+  });
+
+
+  </script>
+
+
+  
 
 
 

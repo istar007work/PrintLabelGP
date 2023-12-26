@@ -3,12 +3,15 @@ body {
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
     width: 100%;
+    scroll-behavior: smooth;
+    
 }
  
 body.loaded {
     opacity: 1;
+    
 }
 
 
@@ -118,22 +121,34 @@ nav ul li:hover > a::before {
 }
 
 
-/* Dropdown Styles */
+/*******************************************************************/
+/*******************************************************************/
+/**newline header*****************************************************************/
+.top_announce {
+  background-color: rgba(221, 221, 221, 0.7); /* Background color */
+  color: #000000; /* Text color */
+  padding: 10px; /* Padding around the content */
+  text-align: center; /* Center-align the text */
+  margin-top: 100px;
+  position: absolute;
+  z-index: 1;
+  width: auto;
+}
+
+/* Styling for the top_announce_text paragraph */
+.top_announce_text {
+  margin: 0; /* Remove default margin to prevent spacing */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
 
 
 /*******************************************************************/
 /*******************************************************************/
-/* responsive css for smaller*******************************************************************/
-
-
-
-
-
-
 /*******************************************************************/
-/*******************************************************************/
-/*******************************************************************/
-
 
 /* Add a container to hold both sections */
 /* Add a container to hold both sections */
@@ -194,9 +209,10 @@ nav ul li:hover > a::before {
     padding: 50px;
     color: #ffffff;
     top: 390px;
-    font-family: Arial, Helvetica, sans-serif;;
+    font-family: Arial, Helvetica, sans-serif;
     
   }
+  
 
 
 
@@ -390,6 +406,12 @@ nav ul li:hover > a::before {
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
   max-width: 400px; /* Set a maximum width for the text */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.sec3_fade-in {
+  opacity: 1;
 }
 
 
@@ -479,13 +501,16 @@ nav ul li:hover > a::before {
   background: linear-gradient(to bottom, #000000, #001238,  #28547c);
   top: 250px;
   height: 400px;
+  width: 50%;
   margin-right: 0;
-  margin-left: auto;
+  margin-left: 0px;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 5px solid #000000; /* Specify the border color and thickness */
   border-radius: 1%;
 
 }
+
+
 
 
 
@@ -644,7 +669,7 @@ nav ul li:hover > a::before {
 
 /*******************************************************************/
 /*******************************************************************/
-/*******************************************************************/
+/***78W****************************************************************/
 
 .sec_six {
   display: flex;
@@ -678,25 +703,164 @@ nav ul li:hover > a::before {
   flex-basis: 50%; /* Adjust as needed */
   padding: 20px;
   text-align: left;
-  max-width: 400px;
+  max-width: 800px;
   color: #fff;
 }
 
 .wdevice {
   color: #ffffff; /* Adjust as needed */
+  font-size: large;
+  font-size: 50px;
+}
+
+/*******************************************************************/
+/*******************************************************************/
+/*79******************************************************************/
+.sec_seven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #000000;
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  background: linear-gradient(to right, #000000, #28547c); /* Specify the border color and thickness */
+  border-radius: 1%;
+}
+
+.seventydiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 50%; /* Adjust as needed */
+}
+
+.seventy_image{
+  max-width: 80%;
+  height: auto;
+}
+
+.seventyname{
+  font-size: 50px;
+}
+
+.section7content{
+  flex-basis: 50%; /* Adjust as needed */
+  padding: 20px;
+  text-align: left;
+  max-width: 700px;
+  color: #fff;
+}
+
+/*******************************************************************/
+/*******************************************************************/
+/**slideshow for harnesses*****************************************************************/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  background: linear-gradient(to right, #e7e7e7, #f3f3f3); /* Specify the border color and thickness */
+  border-radius: 10px;
 }
 
 
+/* Hide elements with the .my-slides class */
+.my-slides {
+  display: none;
+ 
+}
+
+/* Set vertical alignment for images */
+.image-align-middle {
+  vertical-align: middle;
+}
 
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(40, 84, 124, 1); /* Assuming alpha is 1 (fully opaque) */
+}
 
+/* Caption text */
+.harness_text {
+  color: #000000;
+  font-size: larger;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -150px;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+.active, .dot:hover {
+  background-color: #717171;
+}
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
 
@@ -756,4 +920,75 @@ header h4{
     font-size: medium;
     font-family: 'Garamond', sans-serif;
 
+}
+
+
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*FOTTER SETTINGS******************************************************************/
+
+.footer_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1px;
+  background-color: #000000;
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 200px;
+  background: linear-gradient(to right, #1b1b1b, #292929, #1d1d1d); /* Adjust the color stops as needed */ /* Specify the border color and thickness */
+  
+}
+
+
+
+.footer-columns {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: small;
+  max-width: max-content;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+  margin-right: 15px;
+  
+}
+
+
+
+.footer-column a {
+  text-decoration: none;
+  position: relative;
+  color: #ffffff; /* Change the color as needed */
+}
+
+.footer-column a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px; /* Adjust the thickness of the underline */
+  bottom: 0;
+  left: 0;
+  background-color: #2055e7; /* Change the color as needed */
+  transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+.footer-column a:hover::before {
+  width: 100%;
+}
+
+.footerlogo{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin-left: 50px;
 }
