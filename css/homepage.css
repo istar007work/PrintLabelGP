@@ -15,6 +15,9 @@ body.loaded {
 }
 
 
+
+
+
 /*******************************************************************/
 
 nav {
@@ -146,6 +149,31 @@ nav ul li:hover > a::before {
 
 
 
+.geointroductiontext {
+  background-color: #ffffff;
+  margin-top: 170px;
+  background-image: url("navbar_image.png");
+  background-size: 70%;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100px;
+  color: #ffffff;
+  border: #28547c solid;
+  font-size: medium;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1; /* Set a positive value for z-index */
+  text-align: center;
+}
+
+.geointroductiontext:hover {
+  color: #ffffff;
+  background-image: url("navbar_image.png");
+  background-size: 100%;
+
+}
+
+
 /*******************************************************************/
 /*******************************************************************/
 /*******************************************************************/
@@ -154,15 +182,18 @@ nav ul li:hover > a::before {
 /* Add a container to hold both sections */
 .container {
   display: flex;
-  justify-content: space-around; /* Adjust as needed */
-  
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (optional) */
+  width: 1500px;
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 200px;
 }
+
 
 .sec_one,
 .sec_two {
   flex: 1; /* Adjust the flex property to control the width of each section */
   margin: 5px; /* Add margin between the sections */
-  width: auto;
   height: 50px;
   
 }
@@ -176,14 +207,12 @@ nav ul li:hover > a::before {
     color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
     top: 200px;
     height: 800px;
-    left: 0px;
+    left: -50px;
     margin-left: 0%;
     margin-right: auto;
     background: linear-gradient(to bottom, #28547c, #001238,  #030303);
     border-bottom: 5px solid #28547c; /* Specify the border color and thickness */
-    border-radius: 1%;
-    
-    
+    border-radius: 5%;
     font-family: Arial, Helvetica, sans-serif;
     
     
@@ -232,8 +261,13 @@ nav ul li:hover > a::before {
     max-height: 100%;
     width: 500px; 
     z-index: 1; /* Place the image on top of the video */
+    transition: transform 0.5s ease;
+    
    
 
+  }
+  .driver_image:hover{
+    transform: translate(-50%, -50%) scale(1.1); /* Increase the scale factor as needed */
   }
 
 
@@ -245,15 +279,16 @@ nav ul li:hover > a::before {
   color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
   top: 200px;
   height: 800px;
-  background: linear-gradient(to right, #e7e7e7, #ffffff);
+  right: -50px;
+  background: linear-gradient(to right, #e7e7e7, #aaaaaa);
   border-radius: 10%;
   border-bottom: 5px solid #28547c; /* Specify the border color and thickness */
-  border-radius: 1%;
+  border-radius: 5%;
   
   
   margin-right: 0;
   margin-left: auto;
-  font-family: Arial, Helvetica, sans-serif;;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -266,7 +301,7 @@ nav ul li:hover > a::before {
   padding: 50px;
   color: #000000;
   top: 400px;
-  font-family: Arial, Helvetica, sans-serif;;
+  font-family: Arial, Helvetica, sans-serif;
   
   
 }
@@ -290,7 +325,12 @@ nav ul li:hover > a::before {
   max-height: 100%;
   width: 500px; 
   z-index: 1; /* Place the image on top of the video */
+  transition: transform 0.5s ease;
 
+}
+
+.tool_image:hover{
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 
@@ -382,16 +422,30 @@ nav ul li:hover > a::before {
 .xthreepoint,
 .xthree {
   max-width: 50%; /* Ensure the images don't exceed their natural width */
+
 }
 
 .xthreepoint {
   left: auto;
+  transition: transform 0.5s ease;
+  
 }
 
 
 .xthree {
   margin-left: auto; /* Push xthree to the right */
+  transition: transform 0.5s ease;
 }
+
+.xthree:hover {
+  transform: scale(1.1);
+}
+
+.xthreepoint:hover {
+  transform: scale(1.1);
+}
+
+
 
 
 .section3content {
@@ -421,7 +475,6 @@ nav ul li:hover > a::before {
   color: rgb(255, 255, 255); /* Adjust the color as needed */
   max-width: 500px
 }
-
 
 
 

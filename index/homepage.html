@@ -60,12 +60,19 @@
   </div>
   
 
+  <div class="geointroductiontext">
+    <h3>Geometris LP is an industry-leading US manufacturer of IoT (Internet of Things), asset tracking, vehicle diagnostics, and ELD (Electronic Logging Device) devices. They are headquartered in Jersey Village, Texas, and have been providing innovative solutions for fleet management and asset tracking for over 20 years.
+
+      Geometris is known for its high-quality, reliable products and its commitment to customer service. Their products are used by a wide range of businesses, including trucking companies, construction companies, rental companies, and government agencies.</h4>
+
+  </div>
+
 
 
   <!--sec 1 + 2 combined-->
   <div class="container">
     <section class="sec_one">
-      <img class="driver_image" src="driver_id.png">
+      <img class="driver_image" src="driver_id.png" id="driverImage">
       <div class="section1content">
         <h1 class="driverid">BLE Driver ID</h1>
         <h2>Track Drivers</h2>
@@ -94,10 +101,15 @@
   </div>
 
 
+  
+
+
+
+
 
   <section class="sec_three">
     <div class="ximages">
-      <img class="xthreepoint" src="8X (3.1).png" alt="Description of the image">
+      <img class="xthreepoint" src="8X (3).png" alt="Description of the image">
       <img class="xthree" src="8X (3).png" alt="Description of the image">
     </div>
     <div class="section3content">
@@ -112,6 +124,9 @@
 
     </div>
   </section>
+
+
+
 
   <section class="sec_three_two">
     
@@ -330,34 +345,7 @@
 
 
   <!--slideshow script-->
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-  </script>
+  <script src="/slideshow.js"></script>
 
   <!--all section content fade in effect on scroll-->
   <script>
