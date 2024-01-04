@@ -152,13 +152,13 @@ nav ul li:hover > a::before {
 .geointroductiontext {
   background-color: #ffffff;
   margin-top: 170px;
-  background-image: url("navbar_image.png");
+  
   background-size: 70%;
   font-size: large;
   font-family: Arial, Helvetica, sans-serif;
   height: 100px;
-  color: #ffffff;
-  border: #28547c solid;
+  color: #000000;
+  
   font-size: medium;
   border-radius: 3px;
   position: absolute;
@@ -166,12 +166,7 @@ nav ul li:hover > a::before {
   text-align: center;
 }
 
-.geointroductiontext:hover {
-  color: #ffffff;
-  background-image: url("navbar_image.png");
-  background-size: 100%;
 
-}
 
 
 /*******************************************************************/
@@ -421,7 +416,7 @@ nav ul li:hover > a::before {
 
 .xthreepoint,
 .xthree {
-  max-width: 50%; /* Ensure the images don't exceed their natural width */
+  max-width: 30%; /* Ensure the images don't exceed their natural width */
 
 }
 
@@ -487,7 +482,7 @@ nav ul li:hover > a::before {
   color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
   background: linear-gradient(to bottom, #28547c, #001238,  #000000);
   top: 230px;
-  height: 400px;
+  height: 800px;
   margin-right: 0;
   margin-left: auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -553,8 +548,8 @@ nav ul li:hover > a::before {
   color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
   background: linear-gradient(to bottom, #000000, #001238,  #28547c);
   top: 250px;
-  height: 400px;
-  width: 50%;
+  height: 800px;
+  width: 100%;
   margin-right: 0;
   margin-left: 0px;
   font-family: Arial, Helvetica, sans-serif;
@@ -563,7 +558,11 @@ nav ul li:hover > a::before {
 
 }
 
+.sec_three_three h4{
+  font-size: 200px;
+  text-align: center;
 
+}
 
 
 
@@ -576,12 +575,18 @@ nav ul li:hover > a::before {
   color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
   background: linear-gradient(to top, #000000, #001238,  #28547c);
   top: 270px;
-  height: 400px;
+  height: 800px;
   margin-right: 0;
   margin-left: auto;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 5px solid #000000; /* Specify the border color and thickness */
   border-radius: 1%;
+
+}
+
+.sec_three_four h4{
+  font-size: 200px;
+  text-align: center;
 
 }
 
@@ -791,7 +796,7 @@ nav ul li:hover > a::before {
 }
 
 .seventy_image{
-  max-width: 80%;
+  max-width: 45%;
   height: auto;
 }
 
@@ -1031,7 +1036,7 @@ header h4{
   height: 2px; /* Adjust the thickness of the underline */
   bottom: 0;
   left: 0;
-  background-color: #2055e7; /* Change the color as needed */
+  background-color: #ffffff; /* Change the color as needed */
   transition: width 0.3s ease; /* Smooth transition for width */
 }
 
