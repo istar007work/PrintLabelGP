@@ -56,7 +56,7 @@ nav {
 
 .homepagevideo {
     width: 100%; /* Adjust the width to cover the entire nav bar */
-    height: 500px; /* Maintain the aspect ratio */
+    height: 700px; /* Maintain the aspect ratio */
     width: autopx;
     object-fit: cover; /* Crop the video */
     position: absolute;
@@ -132,39 +132,69 @@ nav ul li:hover > a::before {
   color: #000000; /* Text color */
   padding: 10px; /* Padding around the content */
   text-align: center; /* Center-align the text */
-  margin-top: 100px;
+  margin-top: 900px;
   position: absolute;
   z-index: 1;
   width: auto;
 }
 
-/* Styling for the top_announce_text paragraph */
-.top_announce_text {
-  margin: 0; /* Remove default margin to prevent spacing */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Bold text */
-  font-family: Arial, Helvetica, sans-serif;
-  
-}
 
 
 
 .geointroductiontext {
   background-color: #ffffff;
-  margin-top: 170px;
-  
+  margin-top: 400px !important;
   background-size: 70%;
-  font-size: large;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  height: 100px;
+  height: 20px;
   color: #000000;
-  
-  font-size: medium;
   border-radius: 3px;
-  position: absolute;
+  position: relative;
   z-index: 1; /* Set a positive value for z-index */
-  text-align: center;
+  text-align: left;
+  width: 1000px;
+  margin: 0 auto;
+  background-image: url();
+  border-radius: 5px;
 }
+
+.geointro_image {
+  position: relative;
+  max-width: 200%; /* Set the maximum width to 100% of its container */
+  max-height: 1000%; /* Set the maximum height to 100% of its container */
+  height: 500px; /* Ensure the aspect ratio is maintained */
+
+  margin: 0 auto; /* Center the image horizontally if it's a block-level element */
+}
+
+
+
+.latestproducts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 600px;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #28547c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -181,7 +211,7 @@ nav ul li:hover > a::before {
   align-items: center; /* Center vertically (optional) */
   width: 1500px;
   margin: 0 auto; /* Center horizontally */
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 
@@ -279,8 +309,6 @@ nav ul li:hover > a::before {
   border-radius: 10%;
   border-bottom: 5px solid #28547c; /* Specify the border color and thickness */
   border-radius: 5%;
-  
-  
   margin-right: 0;
   margin-left: auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -385,18 +413,29 @@ nav ul li:hover > a::before {
 
 
 
-
-
-
 /*******************************************************************/
 /*******************************************************************/
 /*******************************************************************/
+.gpstrackers {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 1650px;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #28547c;
+  z-index: 3;
+}
+
+
+
 .sec_three {
   position: relative;
   overflow: hidden;
   color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
   background: linear-gradient(to bottom, #000000, #001238,  #28547c);
-  top: 200px;
+  top: 900px;
   height: 800px;
   margin-right: 0;
   margin-left: auto;
@@ -481,7 +520,7 @@ nav ul li:hover > a::before {
   overflow: hidden;
   color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
   background: linear-gradient(to bottom, #28547c, #001238,  #000000);
-  top: 230px;
+  top: 800px;
   height: 800px;
   margin-right: 0;
   margin-left: auto;
@@ -547,8 +586,8 @@ nav ul li:hover > a::before {
   overflow: hidden;
   color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
   background: linear-gradient(to bottom, #000000, #001238,  #28547c);
-  top: 250px;
-  height: 800px;
+  top: 800px;
+  height: 400px;
   width: 100%;
   margin-right: 0;
   margin-left: 0px;
@@ -574,8 +613,8 @@ nav ul li:hover > a::before {
   overflow: hidden;
   color: rgb(255, 255, 255); /* Set text color to white or a color that contrasts with the video */
   background: linear-gradient(to top, #000000, #001238,  #28547c);
-  top: 270px;
-  height: 800px;
+  top: 400px;
+  height: 400px;
   margin-right: 0;
   margin-left: auto;
   font-family: Arial, Helvetica, sans-serif;

@@ -33,12 +33,18 @@ app.use(express.json());
 
 // Handle all other routes by serving the 'index.html' file
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index', 'homepage.html'));
+  res.sendFile(path.join(__dirname, 'index', 'home2.html'));
 });
 
 // all_products.html page
 app.get("/products", (req, res) => {
   res.sendFile(path.join(__dirname, 'index', 'all_products.html'));
+});
+
+
+// about.html page
+app.get("/about-us", (req, res) => {
+  res.sendFile(path.join(__dirname, 'index', 'about.html'));
 });
 
 
