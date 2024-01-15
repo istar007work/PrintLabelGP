@@ -203,27 +203,9 @@ nav ul li:hover > a::before {
 /*******************************************************************/
 /***announcements***************************************************************/
 
-.annoucements {
-    height: 400px;
-    width: auto;
-    position: relative;
-    background-color: #ebebeb;
-    margin-top: 600px;
-}
 
-.annoucement_background {
-    height: 330px;
-    width: auto;
-    margin-top: 20px;
-    overflow: hidden; /* Apply overflow: hidden to hide content overflow */
-}
-
-
-.announce_video{
     
-   
-    
-}
+
 
 
 /*******************************************************************/
@@ -294,7 +276,7 @@ nav ul li:hover > a::before {
     position: relative;
     border: #292929 solid;
     background: linear-gradient(to left, #28547c,#001238,#000000);
-    margin-top: 400px;
+    margin-top: 50px;
 
 
 }
@@ -325,8 +307,7 @@ nav ul li:hover > a::before {
     height: 800px;
     width: auto;
     position: relative;
-    border: #292929 solid;
-    margin-top: 400px;
+    margin-top: 50px;
     
 
 }
@@ -393,8 +374,7 @@ nav ul li:hover > a::before {
     height: 1000px;
     width: auto;
     position: relative;
-    border: #292929 solid;
-    margin-top: 400px;
+    margin-top: 50px;
 
 }
 
@@ -407,6 +387,81 @@ nav ul li:hover > a::before {
     overflow: hidden; /* Apply overflow: hidden to hide content overflow */
 }
 
+.obdimage {
+    position: absolute;
+    left: 15%;
+    transform: translateX(-50%);
+    margin-top: 300px; /* Adjust as needed */
+    height: 600px;
+    max-width: 50%;
+    width: auto;
+    z-index: 1;
+}
+
+
+.obdimage1 {
+    position: absolute;
+    left: 1200px;
+    margin-top: 140px;
+    height: 900px;
+    max-width: 50%;
+    width: auto;
+    z-index: 1;
+}
+
+
+.obdimage2 {
+    position: absolute;
+    left: 100px;
+    top: 0; /* Adjust as needed */
+    height: 600px;
+    max-width: 50%;
+    width: auto;
+    z-index: 1;
+}
+
+.obdfobh2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin-top: 80px; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.obdfobp1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    font-weight: 400;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.obdpoints {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #f2f2f2;
+    
+}
+
+
+.obdpoints{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 800px;
+    width: 600px;
+    font-weight: 400;
+    color: #f2f2f2;
+}
+
+
 
 
 /*******************************************************************/
@@ -416,48 +471,83 @@ nav ul li:hover > a::before {
     height: 400px;
     width: auto;
     position: relative;
-    border: #292929 solid;
-    margin-top: 400px;
+    margin-top: 50px;
 
 }
 
 .h20_gps_trackers_background {
-    height: 300px;
-    width: auto;
-    background-color: #28547c;
-    margin-top: 20px;
-    overflow: hidden; /* Apply overflow: hidden to hide content overflow */
-}
-
-
-/*******************************************************************/
-/*******************************************************************/
-/***section6***************************************************************/
-.oem_gps_trackers{
-    height: 400px;
-    width: auto;
-    position: relative;
-    border: #292929 solid;
-    margin-top: 400px;
-
-}
-
-.oem_gps_trackers_background {
-    height: 300px;
-    width: auto;
-    background-color: #28547c;
-    margin-top: 20px;
-    overflow: hidden; /* Apply overflow: hidden to hide content overflow */
+  height: 800px;
+  width: auto;
+  margin-top: 20px;
+  background: linear-gradient(to top, #28547c, #001238,  #000000);
+  overflow: hidden; /* Apply overflow: hidden to hide content overflow */
 }
 
 
 
+.hdimage {
+  position: absolute;
+  left: 15%;
+  transform: translateX(-50%);
+  margin-top: 500px; /* Adjust as needed */
+  height: 400px;
+  max-width: 50%;
+  width: auto;
+  z-index: 1;
+}
+
+
+.hdimage1 {
+  position: absolute;
+  left: 1200px;
+  margin-top: 140px;
+  height: 700px;
+  max-width: 50%;
+  width: auto;
+  z-index: 1;
+}
+
+
+.hdimage2 {
+  position: absolute;
+  left: 100px;
+  top: 0; /* Adjust as needed */
+  height: 400px;
+  max-width: 50%;
+  width: auto;
+  z-index: 1;
+}
 
 
 
+.hdfobh2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  margin-top: 80px; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #f2f2f2;
+}
 
+.hdfobp1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  font-weight: 400;
+  text-align: center;
+  color: #f2f2f2;
+}
 
-
+.hdpoints {
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #f2f2f2;
+}
 
 
 
@@ -479,8 +569,8 @@ nav ul li:hover > a::before {
   height: 500px;
   position: relative;
   margin: auto;
-  margin-top: 1900px;
-  background: linear-gradient(to right, #e7e7e7, #f3f3f3); /* Specify the border color and thickness */
+  margin-top: 700px;
+  background: linear-gradient(to top, #28547c, #001238,  #000000); /* Specify the border color and thickness */
   border-radius: 10px;
 }
 
